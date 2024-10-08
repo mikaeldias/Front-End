@@ -1,0 +1,41 @@
+<div class="radio-group">
+    <label>
+        <input type="radio" name="tipo-viagem" value="somente-ida" id="somente-ida" checked> Somente Ida
+    </label>
+    <label>
+        <input type="radio" name="tipo-viagem" value="ida-volta" id="ida-volta"> Ida e Volta
+    </label>
+</div>
+
+<div class="form-group">
+    <label for="data-ida">Ida</label>
+    <input type="date" id="data-ida"> 
+</div>
+
+<div class="form-group">
+    <label for="data-volta">Volta</label>
+    <input type="date" id="data-volta" disabled> <!-- Começa desabilitado -->
+</div>
+
+<script>
+    const somenteIda = document.getElementById('somente-ida');
+    const idaVolta = document.getElementById('ida-volta');
+    const dataVolta = document.getElementById('data-volta');
+
+    // Função para habilitar/desabilitar o campo de "Volta"
+    function toggleVolta() {
+        if (somenteIda.checked) {
+            dataVolta.disabled = true;  // Desabilita o campo de volta
+            dataVolta.value = '';       // Limpa a data de volta
+        } else if (idaVolta.checked) {
+            dataVolta.disabled = false; // Habilita o campo de volta
+        }
+    }
+
+    // Adiciona os event listeners aos radios
+    somenteIda.addEventListener('change', toggleVolta);
+    idaVolta.addEventListener('change', toggleVolta);
+    
+    // Executa a função na inicialização para garantir o estado correto
+    toggleVolta();
+</script>

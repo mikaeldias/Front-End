@@ -1,0 +1,189 @@
+.carousel {
+    max-height: 600px; 
+    overflow: hidden;   
+}
+
+.carousel-item img {
+    width: 100%;        
+    height: 600px;
+    object-fit: cover;      
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px; /* Espaçamento entre os cards */
+}
+
+.card {
+    width: 18rem; 
+    height: 300px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content:space-between; 
+    overflow: hidden;
+}
+
+.card img {
+    height: 200px; 
+    width: 100%;
+    object-fit: cover; 
+}
+
+.card-body {
+    padding: 5px; 
+    text-align: center; 
+}
+.card{
+    width: 18rem;
+    height: 22rem;
+}
+
+/* Estilos do carrossel */
+.carousel {
+    position: relative;
+}
+
+/* Estilos da caixa de pesquisa */
+.search-form {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 100%;  
+    max-width: 400px;  
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    margin-top: 5px;
+}
+
+.search-form h5 {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #003399;
+    text-align: center;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Ícone dentro dos campos de entrada */
+.form-group i {
+    position: absolute;
+    top: 50%;
+    left:323px;
+    transform: translateY(-50%);
+    color: #2f2d2d;
+}
+
+
+/* Botões de escolha */
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: #003399;
+}
+
+.radio-group label {
+    font-weight: bold;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;   
+}
+
+/* Botão de busca */
+.btn-search {
+    width: 100%;
+    padding: 12px;
+    background-color: #0040ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.btn-search:hover {
+    background-color: #0033cc; 
+}
+
+ /* Titulos antes dos cards */
+.titulo-destinos {
+    color: #1f1c1c; 
+}
+
+.subtitulo-destinos {
+    color: #1f1c1c; 
+}
+/* Background */
+.bg-blue {
+    background-color: white; 
+    color: white; 
+}
+
+.custom-card {
+    width: 20rem; 
+    height: 28rem; 
+    
+}
+.card-container{
+    margin-top: 100px;
+}
+.card-img-top {
+    height: 200px; 
+    object-fit: cover;
+}
+.card:hover {
+    background-color: #708291;
+    font-size: 18px;
+  }
+.my-custom-button {
+    margin-top: 20px;
+}
+ /* Estilos do rodapé */
+/* Estilos do rodapé */
+/* Estilos do corpo da página */
+body {
+    background-color:  #0B3050; /* Cor de fundo azul */
+    color: white; /* Cor do texto padrão */
+}
+
+/* Estilos do rodapé */
+.footer {
+    background-color: #343a40; /* Cor do fundo do rodapé */
+    color: white; /* Cor do texto do rodapé */
+    margin-top: 100px; /* Espaçamento acima do rodapé */
+}
+
+/* Links no rodapé */
+.footer .text-white a {
+    color: white; /* Cor dos links no rodapé */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.footer .text-white a:hover {
+    color: #f8f9fa; /* Cor mais clara ao passar o mouse */
+}
+
+/* Parte inferior do rodapé */
+.bg-secondary {
+    background-color: #6c757d !important; /* Fundo para a parte inferior do rodapé */
+}
