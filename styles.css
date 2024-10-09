@@ -1,3 +1,14 @@
+.header-bg {
+    background-color: #0B3050;
+}
+
+.menu-links {
+    display: flex; /* Usa Flexbox para alinhar os links horizontalmente */
+    justify-content: flex-end; /* Alinha os links à direita, se necessário */
+    margin-left: 50%;
+    gap: 120px; /* Espaçamento entre os links */
+}
+
 .carousel {
     max-height: 600px; 
     overflow: hidden;   
