@@ -19,35 +19,68 @@
     object-fit: cover;      
 }
 
+
+a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: inherit; /* Mantém a cor do texto inalterada */
+}
+
+
+
 .card-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 15px; /* Espaçamento entre os cards */
+    gap: 20px;
+    padding: 20px;
 }
 
 .card {
-    width: 18rem; 
-    height: 300px; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content:space-between; 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    width: 250px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
 }
 
-.card img {
-    height: 200px; 
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img {
+    position: relative;
+}
+
+.card-img img {
     width: 100%;
-    object-fit: cover; 
+    height: auto;
+    border-bottom: 1px solid #ddd;
 }
 
-.card-body {
-    padding: 5px; 
-    text-align: center; 
+
+.card-info {
+    padding: 15px;
 }
-.card{
-    width: 18rem;
-    height: 22rem;
+
+.card-info p {
+    color: #888;
+    margin: 5px 0;
+}
+
+.card-info h3 {
+    margin: 10px 0;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.card-info h2 {
+    color: #000;
+    font-size: 2em;
+    margin: 0;
 }
 
 /* Estilos do carrossel */
@@ -198,7 +231,7 @@ body {
 
 /* Parte inferior do rodapé */
 .bg-secondary {
-    background-color: #007BFF !important; /* Fundo para a parte inferior do rodapé */
+    background-color: #104f86 !important; /* Fundo para a parte inferior do rodapé */
 }
 .footer {
     background-color: #ffffff;
@@ -211,7 +244,7 @@ body {
 
 .social img{
     width: 40px;
-    height: 50px;
+    height: 40px;
     align-items: center;
     margin-left: 10px;
 }
@@ -224,6 +257,21 @@ body {
 .social a {
     text-decoration: none;
 }
+
+
+.contato {
+    margin-left: 40px;
+}
+
+.contato img{
+   margin-top: -85px;
+   margin-left: -45px;
+   width: 35px;
+   right: 35px;
+}
+
+
+
 
 @media (max-width: 320px) {
     .search-form {
@@ -273,3 +321,4 @@ body {
         color: #2f2d2d;
     }
 }
+

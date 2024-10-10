@@ -1,41 +1,51 @@
-<div class="radio-group">
-    <label>
-        <input type="radio" name="tipo-viagem" value="somente-ida" id="somente-ida" checked> Somente Ida
-    </label>
-    <label>
-        <input type="radio" name="tipo-viagem" value="ida-volta" id="ida-volta"> Ida e Volta
-    </label>
+<div class="card-container">
+    <div class="card">
+        <div class="card-img">
+            <img src="img1.jpg" alt="João Monlevade, MG">
+            <div class="promo-label">Click Oferta</div>
+        </div>
+        <div class="card-info">
+            <p>Belo Horizonte, MG</p>
+            <h3>João Monlevade, MG</h3>
+            <p>A partir de</p>
+            <h2>R$ 8,38</h2>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-img">
+            <img src="img2.jpg" alt="Belo Horizonte, MG">
+            <div class="promo-label">Click Oferta</div>
+        </div>
+        <div class="card-info">
+            <p>Governador Valadares, MG</p>
+            <h3>Belo Horizonte, MG</h3>
+            <p>A partir de</p>
+            <h2>R$ 30,71</h2>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-img">
+            <img src="img3.jpg" alt="São Paulo, SP">
+            <div class="promo-label">Click Oferta</div>
+        </div>
+        <div class="card-info">
+            <p>Campinas, SP</p>
+            <h3>São Paulo, SP</h3>
+            <p>A partir de</p>
+            <h2>R$ 18,00</h2>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-img">
+            <img src="img4.jpg" alt="Presidente Prudente, SP">
+            <div class="promo-label">Click Oferta</div>
+        </div>
+        <div class="card-info">
+            <p>Maringá, PR</p>
+            <h3>Presidente Prudente, SP</h3>
+            <p>A partir de</p>
+            <h2>R$ 28,10</h2>
+        </div>
+    </div>
 </div>
 
-<div class="form-group">
-    <label for="data-ida">Ida</label>
-    <input type="date" id="data-ida"> 
-</div>
-
-<div class="form-group">
-    <label for="data-volta">Volta</label>
-    <input type="date" id="data-volta" disabled> <!-- Começa desabilitado -->
-</div>
-
-<script>
-    const somenteIda = document.getElementById('somente-ida');
-    const idaVolta = document.getElementById('ida-volta');
-    const dataVolta = document.getElementById('data-volta');
-
-    // Função para habilitar/desabilitar o campo de "Volta"
-    function toggleVolta() {
-        if (somenteIda.checked) {
-            dataVolta.disabled = true;  // Desabilita o campo de volta
-            dataVolta.value = '';       // Limpa a data de volta
-        } else if (idaVolta.checked) {
-            dataVolta.disabled = false; // Habilita o campo de volta
-        }
-    }
-
-    // Adiciona os event listeners aos radios
-    somenteIda.addEventListener('change', toggleVolta);
-    idaVolta.addEventListener('change', toggleVolta);
-    
-    // Executa a função na inicialização para garantir o estado correto
-    toggleVolta();
-</script>
