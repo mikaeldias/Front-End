@@ -11,20 +11,54 @@
 </head>
 <body>
     <div class="header-bg">
-    <div class="menu-navbar">
-        <nav class="navbar navbar-expand-lg bg-white">
-            <li class="brand me-3">
-                <a href="file:///C:/Users/Mikael/Front-End/index.html#" title="Voltar para a página inicial"> 
+        <div class="menu-navbar">
+            <nav class="navbar navbar-expand-lg bg-white">
+                <a class="navbar-brand me-3" href="file:///C:/Users/Mikael/Front-End/index.html#" title="Voltar para a página inicial">
                     <img src="logo_ionibus.jpg" alt="Logo iônibus" width="150" height="130"> <!-- Imagem do logo -->
                 </a>
-            </li>
-            <div class="menu-links text-center">
-                <a class="nav-link fw-bold fs-5" href="#">⛫ Home</a>
-                <a class="nav-link fw-bold fs-5" href="#"><i class="fas fa-user" style="color: black;"></i> Meus dados</a>
-                <a class="nav-link fw-bold fs-5" href="#">🛒 Minha Compra</a>
-            </div>            
-        </nav>
-    </div>
+    
+                <!-- Botão para dropdown em dispositivos móveis -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="menu-links text-center">
+                        <a class="nav-link fw-bold fs-5 menu-item" href="#">Home</a>
+                        <a class="nav-link fw-bold fs-5 menu-item" href="#"><i class="fas fa-user" style="color: black;"></i> Meus dados</a>
+                        <a class="nav-link fw-bold fs-5 menu-item" href="#">Minha Compra</a>
+                    </div>            
+                </div>
+            </nav>
+        </div>
+    </div> 
+    <!-- CSS personalizado para gerenciar ícones e espaçamento -->
+    <style>
+        /* Adiciona emojis para telas maiores (desktop) */
+        @media (min-width: 768px) {
+            .menu-item:nth-child(1)::before {
+                content: '⛫ '; /* Emoji para Home */
+            }
+    
+            /* Aqui o ícone não será adicionado via CSS para "Meus dados" */
+            .menu-item:nth-child(3)::before {
+                content: '🛒 '; /* Emoji para Minha Compra */
+            }
+        }
+    
+        /* Remove emojis e ajusta espaçamento em telas menores (mobile) */
+        @media (max-width: 767.98px) {
+            .menu-item::before {
+                content: none; /* Remove emojis */
+            }
+            .nav-link {
+                padding: 10px 0; /* Reduz o espaçamento vertical entre os links */
+            }
+        }
+    </style>
+    
+    
+    
 </div>
     </div>
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -134,11 +168,11 @@
         <div class="container p-4">
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <h5>Sobre Nós</h5>
+                    <h5>SOBRE NÓS</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula ex nec augue viverra fermentum.</p>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 text">
-                    <h5>Links Úteis</h5>
+                    <h5>LINKS ÚTEIS</h5>
                     <div class="social">
                         <a href="#">
                             <img src="img/facebook.png">
@@ -155,9 +189,10 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 mb-4">
-                    <h5>Contato</h5>
-                    <p>Email: contato@example.com</p>
+                    <h5>FALE COM A IÔNIBUS</h5>
+                    <p>email: contato@example.com</p>
                     <p>Telefone: (00) 1234-5678</p>
+                    <p>Endereço: Santarém - Pará - Brasil</p>
                 </div>
             </div>
         </div>
