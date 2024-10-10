@@ -1,10 +1,37 @@
 
 .menu-links {
-    display: flex; /* Usa Flexbox para alinhar os links horizontalmente */
-    justify-content: flex-end; /* Alinha os links à direita, se necessário */
+    display: flex; 
+    justify-content: flex-end; 
     margin-left: 50%;
-    gap: 120px; /* Espaçamento entre os links */
-    color: black; /* Define a cor como preto */
+    gap: 120px; 
+    color: black; 
+}
+/* Estilos para o menu */
+.menu-links a {
+    color: black;
+    text-decoration: none; 
+    padding: 10px;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+
+.menu-links a:hover {
+    color: white;
+    background-color: #0B3050; 
+    transform: scale(1.1); 
+}
+
+
+.menu-links a i:hover {
+    color: white; 
+}
+
+
+@media (max-width: 767.98px) {
+    .menu-links a:hover {
+        background-color: #0B3050;
+        color: white;
+    }
 }
 
 .carousel {
@@ -21,8 +48,8 @@
 
 
 a {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: inherit; /* Mantém a cor do texto inalterada */
+    text-decoration: none; 
+    color: inherit;
 }
 
 
@@ -67,7 +94,7 @@ a {
 }
 
 .card-info p {
-    color: #888;
+    color: #000000;
     margin: 5px 0;
 }
 
@@ -129,7 +156,7 @@ a {
     background-color: #f9f9f9;
 }
 
-/* Ícone dentro dos campos de entrada */
+
 .form-group i {
     position: absolute;
     top: 50%;
@@ -139,7 +166,7 @@ a {
 }
 
 
-/* Botões de escolha */
+
 .radio-group {
     display: flex;
     justify-content: space-between;
@@ -155,7 +182,7 @@ a {
     margin-right: 5px;   
 }
 
-/* Botão de busca */
+
 .btn-search {
     width: 100%;
     padding: 12px;
@@ -171,7 +198,7 @@ a {
     background-color: #F59A2F; 
 }
 
- /* Titulos antes dos cards */
+
 .titulo-destinos {
     color: #1f1c1c; 
 }
@@ -179,7 +206,7 @@ a {
 .subtitulo-destinos {
     color: #1f1c1c; 
 }
-/* Background */
+
 .bg-blue {
     background-color: white; 
     color: white; 
@@ -198,7 +225,7 @@ a {
     object-fit: cover;
 }
 .card:hover {
-    background-color: #708291;
+    background-color: #b6b9bb;
     font-size: 18px;
   }
 .my-custom-button {
@@ -208,30 +235,30 @@ a {
     color: #000000;
 }
 body {
-    background-color:  #0B3050; /* Cor de fundo azul */
-    color: white; /* Cor do texto padrão */
+    background-color:  #0B3050; 
+    color: white; 
 }
 
-/* Estilos do rodapé */
+
 .footer {
-    background-color: #343a40; /* Cor do fundo do rodapé */
-    color: #000000; /* Cor do texto do rodapé */
-    margin-top: 100px; /* Espaçamento acima do rodapé */
+    background-color: #343a40; 
+    color: #000000; 
+    margin-top: 100px; 
 }
 
-/* Links no rodapé */
+
 .footer .text-white a {
-    color: #000000; /* Cor dos links no rodapé */
-    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #000000; 
+    text-decoration: none; 
 }
 
 .footer .text-white a:hover {
-    color: #000000; /* Cor mais clara ao passar o mouse */
+    color: #000000; 
 }
 
 /* Parte inferior do rodapé */
 .bg-secondary {
-    background-color: #104f86 !important; /* Fundo para a parte inferior do rodapé */
+    background-color: white !important; 
 }
 .footer {
     background-color: #ffffff;
