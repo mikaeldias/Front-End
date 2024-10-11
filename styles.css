@@ -1,21 +1,32 @@
 .navbar {
-    display: flex; 
+    display: flex;
     justify-content: space-between; 
-    align-items: center; 
-    background-color: white; 
-    padding: 10px 20px; 
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    width: 100%;
 }
 
 .navbar-brand {
-    margin-right: 50px; /* Espaço entre o logo e os links */
+    margin-right: auto; 
 }
 
 .menu-links {
-    display: flex; 
-    gap: 50px; /* Espaço entre os links */
-    color: black; 
-    white-space: nowrap; 
-    margin-left: auto; 
+    display: flex;
+    gap: 50px; 
+    color: black;
+    white-space: nowrap;
+}
+
+#navbarSupportedContent {
+    display: flex;
+    justify-content: flex-end; 
+    width: 100%; 
+}
+
+
+.carousel-inner img{
+    width: 500px;
 }
 
 /* Media query para dispositivos móveis */
@@ -103,8 +114,7 @@ a {
     width: 250px;
     text-align: center;
     position: relative;
-    transition: transform 0.3s ease;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.5s ease, border 0.3s ease;
 }
 
 .card:hover {
