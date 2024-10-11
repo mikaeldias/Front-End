@@ -1,12 +1,45 @@
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: white; 
+    padding: 10px 20px; 
+}
+
+.navbar-brand {
+    margin-right: 50px; /* Espaço entre o logo e os links */
+}
 
 .menu-links {
     display: flex; 
-    justify-content: flex-end; 
-    margin-left: 50%;
-    gap: 120px; 
+    gap: 50px; /* Espaço entre os links */
     color: black; 
+    white-space: nowrap; 
+    margin-left: auto; 
 }
-/* Estilos para o menu */
+
+/* Media query para dispositivos móveis */
+@media (max-width: 767.98px) {
+    .menu-links {
+        flex-direction: column; /* Muda a direção dos links para coluna */
+        gap: 10px; /* Espaço entre os links */
+        margin-left: 0; 
+        display: none; /* Oculta os links inicialmente */
+    }
+
+    .collapse.show .menu-links {
+        display: flex; /* Exibe os links quando a navbar está expandida */
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Alinha o botão à direita */
+    }
+
+    .menu-links a {
+        padding: 5px; 
+    }
+}
+
 .menu-links a {
     color: black;
     text-decoration: none; 
@@ -14,24 +47,22 @@
     transition: color 0.3s, background-color 0.3s, transform 0.3s;
 }
 
-
 .menu-links a:hover {
     color: white;
     background-color: #0B3050; 
     transform: scale(1.1); 
 }
 
-
-.menu-links a i:hover {
-    color: white; 
-}
-
-
 @media (max-width: 767.98px) {
-    .menu-links a:hover {
-        background-color: #0B3050;
-        color: white;
+    .menu-links {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 20px; 
     }
+}
+.navbar {
+    background-color: white;
+    
 }
 
 .carousel {
@@ -65,6 +96,7 @@ a {
 
 .card {
     background-color: #fff;
+    color: #000;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -72,12 +104,15 @@ a {
     text-align: center;
     position: relative;
     transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    color: white; /* Muda a cor do texto para branco */
+    background-color: #0B3050; /* Muda o fundo do card */
+    transform: scale(1.1); /* Aumenta o tamanho do card */
+    z-index: 1; /* Garante que o card esteja acima de outros elementos */
 }
-
 .card-img {
     position: relative;
 }
@@ -94,14 +129,13 @@ a {
 }
 
 .card-info p {
-    color: #000000;
     margin: 5px 0;
 }
 
 .card-info h3 {
     margin: 10px 0;
     font-size: 1.25em;
-    color: #333;
+
 }
 
 .card-info h2 {
@@ -235,8 +269,8 @@ a {
     color: #000000;
 }
 body {
-    background-color:  #0B3050; 
-    color: white; 
+    background-color: white; 
+    color: black; 
 }
 
 
@@ -262,6 +296,7 @@ body {
 }
 .footer {
     background-color: #ffffff;
+    text-align: center;
 }
 
 .social-links li {
@@ -349,3 +384,38 @@ body {
     }
 }
 
+
+/* Estilo para ambas as containers */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 70px; /* Ajuste aqui se necessário */
+}
+
+/* Estilos para as divs com logos */
+.logos img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+}
+
+/* Se precisar de mais ajuste para a margem entre as logos e o texto */
+.container:first-of-type {
+    margin-top: 0; /* Remove o grande valor negativo */
+}
+
+.Destinos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para uma nova linha se não houver espaço */
+    gap: 16px; /* Espaçamento entre os cards */
+    justify-content: center;
+}
+
+.card:hover{
+    color: white;
+    background-color: #0B3050; 
+    transform: scale(1.1); 
+}

@@ -16,66 +16,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu com Hover</title>
-
-
-    <!-- Inclua o arquivo de hover personalizado -->
     <link rel="stylesheet" href="menu-hover.css">
 </head>
 <body>
-    <div class="header-bg">
-        <div class="menu-navbar">
-            <nav class="navbar navbar-expand-lg bg-white">
-                <a class="navbar-brand me-3" href="file:///C:/Users/Mikael/Front-End/index.html#" title="Voltar para a página inicial">
-                    <img src="logo_ionibus.jpg" alt="Logo iônibus" width="150" height="130"> <!-- Imagem do logo -->
+    <div class="navbar">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" title="Voltar para a página inicial">
+                    <img src="logo_ionibus.jpg" alt="Logo iônibus" width="150" height="130">
                 </a>
-
-                <!-- Botão para dropdown em dispositivos móveis -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="menu-links text-center">
-                        <a class="nav-link fw-bold fs-5 menu-item" href="#">Home</a>
-                        <a class="nav-link fw-bold fs-5 menu-item" href="#"><i class="fas fa-user" style="color: black;"></i> Meus dados</a>
-                        <a class="nav-link fw-bold fs-5 menu-item" href="#">Minha Compra</a>
-                    </div>            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="menu-links">
+                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#">Meus Dados</a>
+                        <a class="nav-link" href="#">Minha Compra</a>
+                    </div>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </div>
-</body>
-</html>
-
-    <!-- CSS personalizado para gerenciar ícones e espaçamento -->
-    <style>
-        /* Adiciona emojis para telas maiores (desktop) */
-        @media (min-width: 768px) {
-            .menu-item:nth-child(1)::before {
-                content: '⛫ '; /* Emoji para Home */
-            }
-    
-            /* Aqui o ícone não será adicionado via CSS para "Meus dados" */
-            .menu-item:nth-child(3)::before {
-                content: '🛒 '; /* Emoji para Minha Compra */
-            }
-        }
-    
-        /* Remove emojis e ajusta espaçamento em telas menores (mobile) */
-        @media (max-width: 767.98px) {
-            .menu-item::before {
-                content: none; /* Remove emojis */
-            }
-            .nav-link {
-                padding: 10px 0; /* Reduz o espaçamento vertical entre os links */
-            }
-        }
-    </style>
     
     
-    
-</div>
-    </div>
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="search-form">
             <h5>Compre sua passagem de <span style="color: #015EAB;">ônibus</span></h5>
@@ -112,10 +76,10 @@
         
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-                <img src="img/foto1.jpg" class="d-block img-fluid">
+                <img src="img/imagem_onibus.png" class="d-block img-fluid">
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-                <img src="img/foto2.jpg" class="d-block img-fluid">
+                <img src="img/imagem_onibus2.jpg" class="d-block img-fluid">
             </div>
             <div class="carousel-item">
                 <img src="img/foto3.jpg" class="d-block img-fluid">
@@ -133,9 +97,9 @@
     </div>
 
   
-    <div style="width: 80%; margin: 0 auto; text-align: center; padding-top: 90px; ">
-        <h1 class="titulo-destinos" style="color: white;">PRINCIPAIS DESTINOS</h1>
-        <h2 class="subtitulo-destinos" style="color: white;">VEJA NOSSOS PRINCIPAIS TRECHOS</h2>
+    <div style="width: 80%; margin: 0 auto; text-align: center; padding-top: 90px;  ">
+        <h1 class="titulo-destinos" style="color: black;">PRINCIPAIS DESTINOS</h1>
+        <h2 class="subtitulo-destinos" style="color: black;">VEJA NOSSOS PRINCIPAIS TRECHOS</h2>
     </div>
 
     <div class="card-container">
@@ -185,59 +149,133 @@
         </div>
     </div>
     <div style="width: 80%; margin: 0 auto; text-align: center; padding-top: 90px; ">
-        <h2 class="subtitulo-destinos" style="color: white;">CONHEÇA NOSSOS PARCEIROS</h2>
+        <h2 class="subtitulo-destinos" style="color: black;">CONHEÇA NOSSOS PARCEIROS</h2>
     </div>
-    <div class="logos">
-        <img src="img/logo_1001.svg" alt="Logomarca 1001">
+    <div class="container" style="padding-top: 40px;" >
+        <div class="logos">
+            <img src="img/logo_1001.svg" alt="Logomarca 1001">
+            <p style="text-align: center; padding: 20px;">1001</p>
+        </div>
+        <div class="logos">
+            <img src="img/gontijo_logo.svg" alt="Logomarca Gontijo">
+            <p style="text-align: center; padding: 20px;">Gontijo</p>
+        </div>
+        <div class="logos">
+            <img src="img/expressoguanabara_logo.svg" alt="Logomarca Guanabara">
+            <p style="text-align: center; padding: 20px;">Guanabara</p>
+        </div>
+        <div class="logos">
+            <img src="img/progressorecife_logo.svg" alt="Logomarca Progresso">
+            <p style="text-align: center; padding: 20px;">Progresso</p>
+        </div>
+        <div class="logos">
+            <img src="img/transnorte_logo.svg" alt="Logomarca Transnorte">
+            <p style="text-align: center; padding: 20px;">TransNorte</p>
+        </div>
     </div>
-    <div class="logos">
-        <img src="img/gontijo_logo.svg" alt="Logomarca Gontijo">
+    <div class="container">
+        <div class="logos">
+            <img src="img/util_logo.svg" alt="Logomarca Util">
+            <p style="text-align: center; padding: 20px;">Util</p>
+        </div>
+        <div class="logos">
+            <img src="img/ouroeprata_logo.svg" alt="Logomarca Ouro e Prata">
+            <p style="text-align: center; padding: 20px;">Ouro e Prata</p>
+        </div>
+        <div class="logos">
+            <img src="img/eucatur_logo.svg" alt="Logomarca Eucatur">
+            <p style="text-align: center; padding: 20px;">Eucatur</p>
+        </div>
+        <div class="logos">
+            <img src="img/portorico_logo.svg" alt="Logomarca Porto Rico">
+            <p style="text-align: center; padding: 20px;">Porto Rico</p>
+        </div>
+        <div class="logos">
+            <img src="img/catarinense_logo.svg" alt="Logomarca Catarinence">
+            <p style="text-align: center; padding: 20px;">Catarinence</p>
+        </div>
     </div>
-    <div class="logos">
-        <img src="img/expressoguanabara_logo.svg" alt="Logomarca Guanabara">
+    <div class="container">
+        <div class="logos">
+            <img src="img/aguiabranca_logo.svg" alt="Logomarca Aguia Branca">
+            <p style="text-align: center; padding: 20px;">Aguia Branca</p>
+        </div>
+        <div class="logos">
+            <img src="img/jamjoy_logo.svg" alt="Logomarca Jamjoy">
+            <p style="text-align: center; padding: 20px;">Jamjoy</p>
+        </div>
+        <div class="logos">
+            <img src="img/mpviagens_mp_viagens.svg" alt="Logomarca Mp Viagens">
+            <p style="text-align: center; padding: 20px;">MP Viagens</p>
+        </div>
+        <div class="logos">
+            <img src="img/boaesperanca_boa_esperanca.svg" alt="Logomarca Boa Esperança">
+            <p style="text-align: center;">Boa Esperança</p>
+        </div>
+        <div class="logos">
+            <img src="img/costaverde_logo.svg" alt="Logomarca Costa Verde">
+            <p style="text-align: center; padding: 20px;">Costa Verde</p>
+        </div>
     </div>
-    <div class="logos">
-        <img src="img/progressorecife_logo.svg" alt="Logomarca Progresso">
+
+    <div style="width: 80%; margin: 0 auto; text-align: center; padding-top: 90px;  ">
+        <h1 class="titulo-destinos" style="color: black;">COMPRE SUA PASSAGEM POR DESTINO: </h1>
     </div>
-    <div class="logos">
-        <img src="img/transnorte_logo.svg" alt="Logomarca transnorte">
+
+<div class="Destinos" style="padding-top: 90px;">
+    <div class="card" style="width: 18rem;">
+        <img src="img/foto_belem.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">Belém</p>
+        </div>
     </div>
-    <div class="logos">
-        <img src="img/util_logo.svg" alt="Logomarca Util">
+    <div class="card" style="width: 18rem;">
+        <img src="img/foto_manaus.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">Manaus</p>
+        </div>
     </div>
-    <footer class="footer">
+    <div class="card" style="width: 18rem;">
+        <img src="img/foto_sp.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">São Paulo</p>
+        </div>
+    </div>
+</div>
+
+    <footer class="footer" style="background-color: #b8b8b8; padding-top: 90px;">
         <div class="container p-4">
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <h5>SOBRE NÓS</h5>
-                    <p>Somos a Iônibus, empresa brasileira de vendas de passagens de Ônibus na região amazônica. Conectamos nossos clientes aos principais destinos
+                    <p style="padding-top: 20px;">Somos a Iônibus, empresa brasileira de vendas de passagens de Ônibus na região amazônica. Conectamos nossos clientes aos principais destinos
                         através de uma plataforma segura, intuitiva e informativa. .</p>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 text">
                     <h5>LINKS ÚTEIS</h5>
-                    <div class="social">
+                    <div class="social" style="padding-top: 20px;" >
                         <a href="#">
                             <img src="img/facebook.png">
                         </a>
-                        <a href="#">
+                        <a href="https://www.instagram.com/ionibus.oficial/?igsh=bWwzZ2ppbjRibHBj">
                             <img src="img/insta.png">
                         </a>
                         <a href="#">
                             <img src="img/twitter.png">
                         </a>
-                        <a href="#">
+                        <a href="https://wa.me/559391795094">
                             <img src="img/whats.png">
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 mb-4">
                     <h5>FALE COM A IÔNIBUS</h5>
-                    <p>email: contato@example.com</p>
+                    <p style="padding-top: 20px;">email: contato@example.com</p>
                     <p>Telefone: (00) 1234-5678</p>
                     <p>Endereço: Santarém - Pará - Brasil</p>
                 </div>
         </div>
-        <div class="text-center py-3 bg-secondary">
+        <div class="text-center py-3 bg- #b8b8b8">
             &copy; 2024 - Todos os direitos reservados.
         </div>
     </footer>    
